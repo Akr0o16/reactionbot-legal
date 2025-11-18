@@ -1,24 +1,170 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8" />
-<title>ReactionBot – Datenschutz</title>
+  <meta charset="UTF-8" />
+  <title>ReactionBot – Datenschutzerklärung</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0f0b1a;
+      --border: #2b2440;
+      --text: #ffffff;
+      --text-muted: #b7b7c9;
+      --accent: #6c4ad6;
+      --accent-soft: rgba(108, 74, 214, 0.18);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1a1235 0, #05030a 55%, #020108 100%);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 32px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .shell {
+      max-width: 900px;
+      width: 100%;
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.03), rgba(0, 0, 0, 0.55));
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+      overflow: hidden;
+      backdrop-filter: blur(18px);
+    }
+    header {
+      padding: 20px 28px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 14px;
+      background: radial-gradient(circle at 30% 20%, #b299ff, #6c4ad6 55%, #3b266e 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+    .title-block h1 { font-size: 20px; font-weight: 650; }
+    .title-block p { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+    nav {
+      margin-left: auto;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      font-size: 13px;
+      text-decoration: none;
+      color: var(--text-muted);
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+    }
+    nav a:hover { color: var(--text); border-color: rgba(255, 255, 255, 0.18); }
+    .active { color: var(--text); border-color: rgba(255, 255, 255, 0.3); background: rgba(255,255,255,0.05); }
+    main {
+      padding: 22px 28px 24px;
+    }
+    h2 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    ul {
+      margin-left: 18px;
+      margin-bottom: 14px;
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    li { margin-bottom: 6px; }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(108,74,214,0.4);
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    .meta {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 14px;
+    }
+  </style>
 </head>
 <body>
-<h1>Datenschutzerklärung für ReactionBot</h1>
+  <div class="shell">
+    <header>
+      <div class="logo">🔐</div>
+      <div class="title-block">
+        <h1>ReactionBot – Datenschutzerklärung</h1>
+        <p>Welche Daten verarbeitet der Bot und wofür?</p>
+      </div>
+      <nav>
+        <a href="index.html">Übersicht</a>
+        <a href="tos.html">Nutzungsbedingungen</a>
+        <a href="privacy.html" class="active">Datenschutz</a>
+      </nav>
+    </header>
 
-<p>ReactionBot verarbeitet nur Daten, die technisch notwendig sind:</p>
+    <main>
+      <span class="badge">Datenschutz</span>
 
-<ul>
-  <li>Discord-Benutzer-ID (für Rollenvergabe)</li>
-  <li>Emoji-Reaktionen</li>
-  <li>Rollen-ID des Servers</li>
-</ul>
+      <h2>1. Verantwortlicher</h2>
+      <p>
+        Verantwortlich für ReactionBot im Sinne des Datenschutzes ist:<br />
+        Akr0o16 (Thomas) – Kontakt: akroo16.biz@gmail.com
+      </p>
 
-<p>Es erfolgt keine Speicherung oder Weitergabe an Dritte.</p>
+      <h2>2. Welche Daten werden verarbeitet?</h2>
+      <ul>
+        <li>Discord-Benutzer-ID (zur Rollenvergabe/-entfernung)</li>
+        <li>Emoji-Reaktionen auf definierte Nachrichten</li>
+        <li>Rollen-IDs und Kanal-IDs des Servers, auf dem der Bot aktiv ist</li>
+      </ul>
 
-<p>Kontakt: akroo16.biz@gmail.com</p>
+      <h2>3. Zweck der Verarbeitung</h2>
+      <p>
+        Die Daten werden ausschließlich verwendet, um Rollen automatisch zuzuweisen oder zu entfernen
+        und um den Bot technisch zu betreiben (Logging, Fehleranalyse).
+      </p>
 
-<p>Letzte Aktualisierung: 18.11.2025</p>
+      <h2>4. Speicherung</h2>
+      <p>
+        ReactionBot speichert keine personenbezogenen Daten dauerhaft in einer externen Datenbank.
+        Verarbeitungen erfolgen live über die Discord-API. Logdaten (z.B. Fehlermeldungen) können
+        temporär auf dem Host-System gespeichert werden, enthalten aber in der Regel nur IDs.
+      </p>
+
+      <h2>5. Weitergabe an Dritte</h2>
+      <p>
+        Es erfolgt keine Weitergabe personenbezogener Daten an Dritte. Die Nutzung unterliegt
+        zusätzlich den Datenschutzbestimmungen von Discord.
+      </p>
+
+      <h2>6. Rechte der Betroffenen</h2>
+      <p>
+        Bei Fragen zur Datenverarbeitung oder bei Auskunftswünschen kannst du dich jederzeit
+        unter der oben genannten Kontaktadresse melden.
+      </p>
+
+      <p class="meta">Letzte Aktualisierung: 18.11.2025</p>
+    </main>
+  </div>
 </body>
 </html>
